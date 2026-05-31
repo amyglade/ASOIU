@@ -1,0 +1,27 @@
+@{
+    ViewData["Title"] = "Главная";
+}
+
+<div class="hero">
+    <h1>🔬 Управление экспериментами</h1>
+    <p>Приложение для учёта лабораторий и экспериментов.<br/>
+       Вариант 10 · ДЗ №3 · МГТУ им. Н.Э. Баумана</p>
+</div>
+
+<div class="cards">
+    <a class="card" asp-controller="Laboratory" asp-action="Index">
+        <div class="card-icon">🏛️</div>
+        <h2>Лаборатории</h2>
+        <p>Справочник лабораторий. Добавление, редактирование, удаление.</p>
+    </a>
+    <a class="card" asp-controller="Experiment" asp-action="Index">
+        <div class="card-icon">⚗️</div>
+        <h2>Эксперименты</h2>
+        <p>Список опытов с длительностью. Полный CRUD.</p>
+    </a>
+    <a class="card" asp-controller="Report" asp-action="Index">
+        <div class="card-icon">📊</div>
+        <h2>Отчёт</h2>
+        <p>Сводный отчёт: список, статистика, средние значения.</p>
+    </a>
+</div>
